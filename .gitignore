@@ -14,9 +14,10 @@ Gemfile.lock
 /.bundle
 
 # Ignore the default SQLite database.
+config/database.yml
 /db/*.sqlite3
 /db/*.sqlite3-journal
-config/database.yml
+
 
 # Ignore all logfiles and tempfiles.
 /log/*
