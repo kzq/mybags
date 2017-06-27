@@ -5,21 +5,22 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: sqlserver
+  mode: dblib
+  username: stuser
+  password: 16bm/93LC8[j3/o  
+  host: 52.50.102.154
+  timeout: 0
+  port: 1297
 
 development:
   <<: *default
-  database: db/development.sqlite3
-
+  database: mybags
+  
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
-test:
-  <<: *default
-  database: db/test.sqlite3
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: mybags

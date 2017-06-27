@@ -10,13 +10,13 @@ Gemfile.lock
 ## RVM
 .ruby-version
 .ruby-gemset
-
 # Ignore bundler config.
 /.bundle
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
+config/database.yml
 
 # Ignore all logfiles and tempfiles.
 /log/*
