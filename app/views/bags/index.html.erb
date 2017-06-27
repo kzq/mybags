@@ -14,11 +14,10 @@
   </thead>
 
   <tbody>
-    <% @bags.each do |bag| %>
+    <% @bags.order("code_id,colour_id").each do |bag| %>
       <tr>
-        <td><%= bag.code %></td>
-        <td><%= bag.colour %></td>
-        <td><%= bag.price %></td>
+        <td><%= bag.code.code %></td>
+        <td><%= bag.colour.colour %></td>
         <td><%= bag.price %></td>
         <td><%= link_to 'Show', bag %></td>
         <td><%= link_to 'Edit', edit_bag_path(bag) %></td>

@@ -13,9 +13,14 @@
 
   <div class="field">
     <%= f.label :bag_id %>
-    <%= f.text_field :bag_id %>
+    <%= f.collection_select :bag_id, Bag.order(:code_id,:colour_id),:id,:name_with_code_and_colour_and_price, include_blank: true %>
   </div>
-
+  
+  <div class="field">
+    <%= f.label :price %>
+    <%= f.text_field :price %>
+  </div>
+  
   <div class="field">
     <%= f.label :date %>
     <%= f.date_select :date %>

@@ -13,17 +13,12 @@
 
   <div class="field">
     <%= f.label :code_id %>
-    <%= f.text_field :code_id %>
+    <%= f.collection_select :code_id, Code.order(:code),:id,:code, include_blank: true %>
   </div>
 
   <div class="field">
     <%= f.label :colour_id %>
-    <%= f.text_field :colour_id %>
-  </div>
-
-  <div class="field">
-    <%= f.label :price %>
-    <%= f.text_field :price %>
+    <%= f.collection_select :colour_id, Colour.order(:colour),:id,:colour, include_blank: true %>
   </div>
 
   <div class="field">
