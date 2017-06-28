@@ -2,14 +2,14 @@
 .project
 
 ## PROJECT
-Gemfile.lock
+#Gemfile.lock
 
 ## gEDIT
 *~
 
 ## RVM
-.ruby-version
-.ruby-gemset
+#.ruby-version
+#.ruby-gemset
 # Ignore bundler config.
 /.bundle
 
