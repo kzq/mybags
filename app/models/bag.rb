@@ -5,6 +5,6 @@ class Bag < ApplicationRecord
   has_many :sales
   
   def name_with_code_and_colour_and_price
-    "#{code.code} - #{colour.colour} - £#{price}"
+    "#{code.code} - #{colour.colour} - £#{retail_price}"
   end
 end
